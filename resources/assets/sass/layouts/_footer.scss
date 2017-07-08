@@ -1,0 +1,44 @@
+.footer {
+    
+    background: $default-light-bg;
+    
+    .footer-image {
+        display: none;
+    }
+    
+    .footer-copyright {
+        text-align: center;
+        background: white;
+    }
+    
+    @media (min-width: 768px) {
+        
+        background: rgba($default-light-bg, .95);
+        
+        .footer-image-container {
+            text-align: center;
+        }
+        
+        .footer-image {
+            display: inline-block;
+            width: 100%;
+            height: auto;
+        }
+        
+        .footer-copyright {
+            background: rgba($default-light-bg, 1);
+        }
+    }
+    
+    @media (min-width: 1360px) {
+        .footer-image {
+            width: 100%;
+        }
+    }
+    
+    @media (min-width: 1900px) {
+        .footer-image {
+            width: 80%;
+        }
+    }
+}

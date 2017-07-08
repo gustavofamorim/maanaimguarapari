@@ -1,0 +1,25 @@
+.event {
+
+    background-color: $card-default-bg;
+
+    .event-title {
+    
+    }
+    
+    .event-image {
+        width: auto;
+        height: 100px;
+    }
+    
+    .event-caption{
+    
+    }
+    
+    @media (min-width: 768px) {
+        padding-bottom: 0px;
+    }
+}
+
+.event-transparent {
+    background-color: rgba($body-bg, .8) !important;
+}
