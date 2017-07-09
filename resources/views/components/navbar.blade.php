@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid navbar-container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#maanaim-navbar" aria-expanded="false">
                 <span class="sr-only">Opções de Navegação</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -12,7 +12,7 @@
             </a>
         </div>
         
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="maanaim-navbar">
             <ul class="nav navbar-nav">
                 <li {{ isset($home) ? 'class=active' : '' }}><a href="{{ route('index') }}">Home</a></li>
                 <li {{ isset($eventos) ? 'class=active' : '' }}><a href="{{ route('eventos') }}">Eventos</a></li>
@@ -24,7 +24,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li {{ isset($voluntario) ? 'class=active' : '' }} ><a href="{{ route('voluntario') }}">Seja voluntário!</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <a id="login-dropdown" href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <span class="glyphicon glyphicon-user"></span>
                         @if(Auth::check())
                             Auth::user()->name

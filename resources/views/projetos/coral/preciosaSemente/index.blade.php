@@ -1,4 +1,4 @@
-@extends('layouts.breadcrumbed', ['aditional' => 'Coral Preciosa Semente', 'breadcrumb' => 'preciosa-semente'])
+@extends('layouts.project', ['aditional' => 'Coral Preciosa Semente', 'breadcrumb' => 'preciosa-semente'])
 
 @section('content')
 

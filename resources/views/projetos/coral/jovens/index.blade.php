@@ -1,4 +1,4 @@
-@extends('layouts.breadcrumbed', ['aditional' => 'Coral de Jovens', 'breadcrumb' => 'coral-jovens'])
+@extends('layouts.project', ['aditional' => 'Coral de Jovens', 'breadcrumb' => 'coral-jovens'])
 
 @section('project-content')
 

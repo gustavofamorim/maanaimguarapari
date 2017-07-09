@@ -1,17 +1,21 @@
 .section-header {
+  
+  //                          Video height      - body padding compensation- projects compensation
+  $section-header-size: calc(((100vw * 9) / 16) - #{$body-default-padding} - 370px);
+
   .arrow {
     display: none;
   }
 
   @keyframes MoveUpDown {
     0% {
-      bottom: calc(25vh - 15px);
+      bottom: calc(250px - 15px);
     }
     50% {
-      bottom: 25vh;
+      bottom: 250px;
     }
     100% {
-      bottom: calc(25vh - 15px);
+      bottom: calc(250px - 15px);
     }
   }
   
@@ -19,7 +23,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    max-height: $usable-screen-height;
+    max-height: $default-usable-screen-height;
   }
   
   .bg-video{
@@ -28,17 +32,18 @@
   }
   
   @media (min-width: 768px) {
-    
-    height: calc((115vh * 9) / 16);
+    height: $section-header-size;
     
     .arrow {
-      animation: MoveUpDown 2s linear infinite;
       display: block !important;
-      position: absolute;
-      left: 50%;
       z-index: 1;
-      font-size: 40px;
       color: white;
+      font-size: 40px;
+      
+      animation: MoveUpDown 1s linear infinite;
+      position: absolute;
+      left: 50vw;
+      bottom: 0px;
     }
     
     .bg-video {
@@ -54,18 +59,24 @@
   padding: 15px;
 
   .projeto {
-    width: 100%;
-    height: 100px;
-    background-color: #fff;
-    position: relative;
     
-    img {
-      position: absolute;
-      margin: auto;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+    padding: 5px;
+
+    .thumbnail {
+      width: 100%;
+      height: 100px;
+      background-color: #fff;
+      position: relative;
+      
+      img {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 5px;
+      }
     }
   }
   
@@ -75,7 +86,13 @@
     background-color: rgba($default-light-bg, .8);
     
     .projeto {
-      height: 200px;
+      
+      padding-left: calc(#{$grid-gutter-width} / 2);
+      padding-right: calc(#{$grid-gutter-width} / 2);
+      
+      .thumbnail {
+        height: 200px;
+      }
     }
     
     .section-projects-title {

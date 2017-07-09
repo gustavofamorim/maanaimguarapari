@@ -11,6 +11,7 @@
 
 // -- Local
 @import "modules/home-sections";
+@import "modules/projects";
 
 // Layouts
 @import "layouts/nav";
@@ -19,5 +20,5 @@
 @import "layouts/breadcrumb";
 
 .content {
-    padding-top: $navbar-height;
+    padding-top: $body-default-padding;
 }

@@ -2,10 +2,18 @@
 $navbar-default-bg: rgba(255,255,255, 1);
 $navbar-height: 100px;
 
+// Breadcrumb
+$breadcrumb-height: 15px;
+$breadcrumb-default-background: rgba(white, .9);
+
 // Body
 $body-bg: #f5f8fa;
-$body-padding: $navbar-height;
-$usable-screen-height: calc(100vh - #{$body-padding});
+
+$body-default-padding: $navbar-height;
+$default-usable-screen-height: calc(100vh - #{$body-default-padding});
+
+$body-breadcrumb-padding: calc(#{$navbar-height} + #{$breadcrumb-height});
+$breadcrumbed-usable-screen-height: calc(100vh - #{$body-breadcrumb-padding});
 
 // Colors
 $default-light-bg: $body-bg;

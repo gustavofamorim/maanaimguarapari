@@ -18,20 +18,18 @@
             </div>
             <div class="col-sm-10">
                 <div class="row">
-                  <div class="col-xs-6 col-sm-5 col-md-3">
-                    <a href="{{ route('aprendiz-jr') }}" class="thumbnail projeto">
+                  <div class="col-xs-6 col-sm-5 col-md-3 projeto">
+                    <a href="{{ route('aprendiz-jr') }}" class="thumbnail">
                       <img src="{{ asset('img/projeto-aprendiz-jr.png') }}" alt="Projeto Aprendiz Júnior">
                     </a>
                   </div>
-                  <div class="col-xs-6 col-sm-5 col-md-3">
-                    <div style="height: 100%;"></div>
-                    <a href="{{ route('preciosa-semente') }}" class="thumbnail projeto">
+                  <div class="col-xs-6 col-sm-5 col-md-3 projeto">
+                    <a href="{{ route('preciosa-semente') }}" class="thumbnail">
                       <img src="{{ asset('img/preciosa-semente.png') }}" alt="Projeto Aprendiz Júnior">
                     </a>
                   </div>
-                  <div class="col-xs-6 col-sm-5 col-md-3">
-                    <div style="height: 100%;"></div>
-                    <a href="{{ route('coral-jovens') }}" class="thumbnail projeto">
+                  <div class="col-xs-6 col-sm-5 col-md-3 projeto">
+                    <a href="{{ route('coral-jovens') }}" class="thumbnail">
                       <img src="{{ asset('img/coral_de_jovens.o.svg') }}" alt="Coral de Jovens">
                     </a>
                   </div>
@@ -45,7 +43,7 @@
             </div>
             <div class="col-sm-10">
                 <div class="row">
-                  <div class="col-sm-6 col-md-4">
+                  <div class="col-sm-6 col-md-3">
                     <div class="thumbnail event event-transparent">
                       <img class="event-image" src="{{ asset('img/coral_de_jovens.o.svg') }}">
                       <div class="caption event-caption">

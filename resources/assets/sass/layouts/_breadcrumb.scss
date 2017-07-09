@@ -5,6 +5,18 @@
     
     .breadcrumb {
         padding-left: 30px;
-        background-color: rgba(white, 0.9);
+        background-color: white;
+    }
+}
+
+.breadcrumb-fixed-bellownavbar {
+    position: fixed;
+    top: $body-default-padding;
+    width: 100vw;
+    z-index: 100;
+    height: $breadcrumb-height;
+    
+    .breadcrumb {
+        background-color: $breadcrumb-default-background;
     }
 }
