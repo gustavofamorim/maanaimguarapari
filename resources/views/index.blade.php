@@ -3,14 +3,13 @@
 @section('content')
     <div class="container-fluid">
         <section class="row section-header">
-            <div class="bg-video-container">
-                <video class="bg-video" poster="{{ asset('img/maanaim_presentation.jpg') }}" playsinline autoplay muted loop>
-                    <source src="{{ asset('img/maanaim_presentation.mp4') }}" type="video/mp4">
-                </video>
-            </div>
-            <div class="arrow">
+            <video class="bg-video" poster="{{ asset('img/maanaim_presentation.jpg') }}" playsinline autoplay muted loop>
+                <source src="{{ asset('img/maanaim_presentation.mp4') }}" type="video/mp4">
+            </video>
+            <img class="maanaim-logo" src="{{ asset('img/logo.o.svg') }}"></img>
+              <div class="arrow">
                 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-            </div>
+              </div>
         </section>
         <section class="row section-projects">
             <div class="col-sm-2 section-projects-title">
@@ -18,17 +17,17 @@
             </div>
             <div class="col-sm-10">
                 <div class="row">
-                  <div class="col-xs-6 col-sm-5 col-md-3 projeto">
+                  <div class="col-xs-6 col-sm-3 projeto">
                     <a href="{{ route('aprendiz-jr') }}" class="thumbnail">
                       <img src="{{ asset('img/projeto-aprendiz-jr.png') }}" alt="Projeto Aprendiz Júnior">
                     </a>
                   </div>
-                  <div class="col-xs-6 col-sm-5 col-md-3 projeto">
+                  <div class="col-xs-6 col-sm-3 projeto">
                     <a href="{{ route('preciosa-semente') }}" class="thumbnail">
                       <img src="{{ asset('img/preciosa-semente.png') }}" alt="Projeto Aprendiz Júnior">
                     </a>
                   </div>
-                  <div class="col-xs-6 col-sm-5 col-md-3 projeto">
+                  <div class="col-xs-6 col-sm-3 projeto">
                     <a href="{{ route('coral-jovens') }}" class="thumbnail">
                       <img src="{{ asset('img/coral_de_jovens.o.svg') }}" alt="Coral de Jovens">
                     </a>

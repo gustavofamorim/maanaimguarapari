@@ -16,7 +16,6 @@
             <ul class="nav navbar-nav">
                 <li {{ isset($home) ? 'class=active' : '' }}><a href="{{ route('index') }}">Home</a></li>
                 <li {{ isset($eventos) ? 'class=active' : '' }}><a href="{{ route('eventos') }}">Eventos</a></li>
-                <li {{ isset($conheca) ? 'class=active' : '' }}><a href="{{ route('conheca') }}">Conheça o Maanaim</a></li>
                 @if(isset($aditional))
                     <li class="active"><a href="#">{{ $aditional }}</a></li>
                 @endif

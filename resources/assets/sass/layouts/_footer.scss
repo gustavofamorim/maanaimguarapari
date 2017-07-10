@@ -1,9 +1,12 @@
 .footer {
     
     background: $default-light-bg;
-    
-    .footer-image {
-        display: none;
+    padding: 0px;
+
+    .footer-info {
+        .footer-image-container {
+            display: none;
+        }
     }
     
     .footer-copyright {
@@ -15,30 +18,30 @@
         
         background: rgba($default-light-bg, .95);
         
-        .footer-image-container {
-            text-align: center;
-        }
-        
-        .footer-image {
-            display: inline-block;
-            width: 100%;
-            height: auto;
+        .footer-info {
+            padding: 0px;
+            .footer-image-container {
+                display: block;
+                text-align: center;
+                min-height: 250px;
+                position: relative;
+                
+                .footer-image {
+                    width: 80%;
+                    height: auto;
+                    
+                    position: absolute;
+                    margin: auto;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
         }
         
         .footer-copyright {
             background: rgba($default-light-bg, 1);
-        }
-    }
-    
-    @media (min-width: 1360px) {
-        .footer-image {
-            width: 100%;
-        }
-    }
-    
-    @media (min-width: 1900px) {
-        .footer-image {
-            width: 80%;
         }
     }
 }

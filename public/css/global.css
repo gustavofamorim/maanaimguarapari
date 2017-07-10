@@ -8350,58 +8350,73 @@ button.close {
   }
 }
 
-.section-header .arrow {
-  display: none;
-}
-
 @-webkit-keyframes MoveUpDown {
   0% {
-    bottom: calc(250px - 15px);
+    bottom: calc(30px - 15px);
   }
 
   50% {
-    bottom: 250px;
+    bottom: 30px;
   }
 
   100% {
-    bottom: calc(250px - 15px);
+    bottom: calc(30px - 15px);
   }
 }
 
 @keyframes MoveUpDown {
   0% {
-    bottom: calc(250px - 15px);
+    bottom: calc(30px - 15px);
   }
 
   50% {
-    bottom: 250px;
+    bottom: 30px;
   }
 
   100% {
-    bottom: calc(250px - 15px);
+    bottom: calc(30px - 15px);
   }
 }
 
-.section-header .bg-video-container {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  max-height: calc(100vh - 100px);
+.section-header .bg-video {
+  width: 100vw;
+  height: auto;
 }
 
-.section-header .bg-video {
-  width: 100%;
-  height: auto;
+.section-header .maanaim-logo {
+  width: 50%;
+  display: none;
+}
+
+.section-header .arrow {
+  display: none;
 }
 
 @media (min-width: 768px) {
   .section-header {
-    height: calc(((100vw * 9) / 16) - 100px - 370px);
+    position: relative;
+    min-height: calc(calc((100vw * 9) / 16) - (100px * 2));
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .section-header .bg-video {
+    position: fixed;
+    top: 0px;
+    z-index: -1;
+  }
+
+  .section-header .maanaim-logo {
+    display: block;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 
   .section-header .arrow {
     display: block !important;
-    z-index: 1;
     color: white;
     font-size: 40px;
     -webkit-animation: MoveUpDown 1s linear infinite;
@@ -8409,12 +8424,6 @@ button.close {
     position: absolute;
     left: 50vw;
     bottom: 0px;
-  }
-
-  .section-header .bg-video {
-    position: fixed;
-    top: 0px;
-    z-index: -1;
   }
 }
 
@@ -8520,9 +8529,10 @@ button.close {
 
 .footer {
   background: #f5f8fa;
+  padding: 0px;
 }
 
-.footer .footer-image {
+.footer .footer-info .footer-image-container {
   display: none;
 }
 
@@ -8536,30 +8546,30 @@ button.close {
     background: rgba(245, 248, 250, 0.95);
   }
 
-  .footer .footer-image-container {
-    text-align: center;
+  .footer .footer-info {
+    padding: 0px;
   }
 
-  .footer .footer-image {
-    display: inline-block;
-    width: 100%;
+  .footer .footer-info .footer-image-container {
+    display: block;
+    text-align: center;
+    min-height: 250px;
+    position: relative;
+  }
+
+  .footer .footer-info .footer-image-container .footer-image {
+    width: 80%;
     height: auto;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 
   .footer .footer-copyright {
     background: #f5f8fa;
-  }
-}
-
-@media (min-width: 1360px) {
-  .footer .footer-image {
-    width: 100%;
-  }
-}
-
-@media (min-width: 1900px) {
-  .footer .footer-image {
-    width: 80%;
   }
 }
 
