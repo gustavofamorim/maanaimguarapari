@@ -3,7 +3,10 @@
 @section('title', 'Projeto Aprendiz Júnior')
 
 @section('content')
-<div class="container">
+<div class="background-img">
+    <img src="{{ asset('img/aprendiz-jr-page-background.png') }}"></img>
+</div>
+<div class="container projeto-aprendiz-jr-container">
     <div class="row">
         <div class="col-md-12">
             <h1>Projeto Aprendiz Júnior</h1>

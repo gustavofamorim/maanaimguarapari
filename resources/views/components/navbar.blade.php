@@ -17,7 +17,7 @@
                 <li {{ isset($home) ? 'class=active' : '' }}><a href="{{ route('index') }}">Home</a></li>
                 <li {{ isset($eventos) ? 'class=active' : '' }}><a href="{{ route('eventos') }}">Eventos</a></li>
                 @if(isset($aditional))
-                    <li class="active"><a href="#">{{ $aditional }}</a></li>
+                    <li class="active navbar-additional-item"><a href="#">{{ $aditional }}</a></li>
                 @endif
             </ul>
             <ul class="nav navbar-nav navbar-right">

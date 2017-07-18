@@ -8,28 +8,28 @@
             <video class="bg-video" poster="{{ asset('img/maanaim_presentation.jpg') }}" playsinline autoplay muted loop>
                 <source src="{{ asset('img/maanaim_presentation.mp4') }}" type="video/mp4">
             </video>
-            <img class="maanaim-logo" src="{{ asset('img/logo.o.svg') }}"></img>
-              <div class="arrow">
-                <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-              </div>
+            {!! file_get_contents(asset('img/logo.o.svg')) !!}
+            <div class="arrow">
+              <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+            </div>
         </section>
         <section class="row section-projects">
-            <div class="col-sm-2 section-projects-title">
+            <div class="col-sm-3 col-md-2 section-projects-title">
                 <h1>Nossos Projetos</h1>
             </div>
-            <div class="col-sm-10">
+            <div class="col-sm-9 col-md-10">
                 <div class="row">
-                  <div class="col-xs-6 col-sm-3 projeto">
+                  <div class="col-xs-6 col-md-3 projeto">
                     <a href="{{ route('aprendiz-jr') }}" class="thumbnail">
                       <img src="{{ asset('img/projeto-aprendiz-jr.png') }}" alt="Projeto Aprendiz Júnior">
                     </a>
                   </div>
-                  <div class="col-xs-6 col-sm-3 projeto">
+                  <div class="col-xs-6 col-md-3 projeto">
                     <a href="{{ route('preciosa-semente') }}" class="thumbnail">
                       <img src="{{ asset('img/preciosa-semente.png') }}" alt="Projeto Aprendiz Júnior">
                     </a>
                   </div>
-                  <div class="col-xs-6 col-sm-3 projeto">
+                  <div class="col-xs-6 col-md-3 projeto">
                     <a href="{{ route('coral-jovens') }}" class="thumbnail">
                       <img src="{{ asset('img/coral_de_jovens.o.svg') }}" alt="Coral de Jovens">
                     </a>
@@ -38,11 +38,11 @@
             </div>
         </section>
         <section class="row section-next-events">
-            <div class="col-sm-2 section-next-events-title">
+            <div class="col-sm-3 col-md-2 section-next-events-title">
                 <h1>Próximos eventos</h1>
                 <a href="{{ route('eventos') }}"><h4>Ver Calendário</h4></a>
             </div>
-            <div class="col-sm-10">
+            <div class="col-sm-9 col-md-10">
                 <div class="row">
                   @component('components.events')
                     @slot('title', 'Ensaio com os Jovens')

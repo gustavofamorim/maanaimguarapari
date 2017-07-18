@@ -11436,7 +11436,7 @@ button.close {
   height: auto;
 }
 
-.section-header .maanaim-logo {
+.section-header svg {
   width: 50%;
   display: none;
 }
@@ -11448,7 +11448,7 @@ button.close {
 @media (min-width: 768px) {
   .section-header {
     position: relative;
-    min-height: calc(calc((100vw * 9) / 16) - (100px * 2));
+    min-height: calc(calc((100vw * 9) / 16) - 100px);
     background-color: rgba(255, 255, 255, 0.2);
   }
 
@@ -11458,7 +11458,7 @@ button.close {
     z-index: -1;
   }
 
-  .section-header .maanaim-logo {
+  .section-header svg {
     display: block;
     position: absolute;
     margin: auto;
@@ -11467,6 +11467,69 @@ button.close {
     right: 0;
     bottom: 0;
   }
+
+  .section-header svg #icm-logo {
+    opacity: 0;
+    stroke-width: .6;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-name: show;
+            animation-name: show;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    stroke: #ff0000;
+    stroke-dasharray: 2810;
+    stroke-dashoffset: 2810;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-delay: 6.5s;
+            animation-delay: 6.5s;
+  }
+
+  .section-header svg #icm-logo-line {
+    stroke-width: .6;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-name: draw;
+            animation-name: draw;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    stroke: #ff0000;
+    stroke-dasharray: 2810;
+    stroke-dashoffset: 2810;
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+  }
+
+@-webkit-keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+
+@keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes show {
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes show {
+    to {
+      opacity: 1;
+    }
+}
 
   .section-header .arrow {
     display: block !important;
@@ -11480,8 +11543,18 @@ button.close {
   }
 }
 
+@media (min-width: 1200px) {
+  .section-header {
+    min-height: calc(calc((100vw * 9) / 16) - 100px - 100px);
+  }
+}
+
 .section-projects {
   padding: 15px;
+}
+
+.section-projects .section-projects-title {
+  padding: 5px;
 }
 
 .section-projects .projeto {
@@ -11511,6 +11584,10 @@ button.close {
     background-color: rgba(245, 248, 250, 0.8);
   }
 
+  .section-projects .section-projects-title {
+    text-align: right;
+  }
+
   .section-projects .projeto {
     padding-left: calc(30px / 2);
     padding-right: calc(30px / 2);
@@ -11519,14 +11596,10 @@ button.close {
   .section-projects .projeto .thumbnail {
     height: 200px;
   }
-
-  .section-projects .section-projects-title {
-    text-align: right;
-  }
 }
 
 .section-next-events {
-  padding: 15px;
+  padding: 5px;
   background-color: white;
 }
 
@@ -11543,6 +11616,33 @@ button.close {
 
 .project-content {
   padding-top: calc(calc(100px + 15px) + 25px) !important;
+}
+
+.project-content .projeto-aprendiz-jr-container {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+}
+
+.background-img {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .background-img {
+    display: block;
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .background-img img {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    /* For IE8 and earlier */
+  }
 }
 
 .navbar-brand img {
@@ -11578,11 +11678,21 @@ button.close {
   .icon-size {
     font-size: 87px;
   }
+
+  .navbar-additional-item {
+    display: none !important;
+  }
+}
+
+@media (min-width: 840px) {
+  .navbar-additional-item {
+    display: inline !important;
+  }
 }
 
 .footer {
   background: #f5f8fa;
-  padding: 0px;
+  padding: 5px;
 }
 
 .footer .footer-info .footer-image-container {
