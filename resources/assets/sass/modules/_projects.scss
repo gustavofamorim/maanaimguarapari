@@ -1,4 +1,3 @@
-
 .project-content {
-    padding-top: $body-breadcrumb-padding !important;
+    padding-top: calc(#{$body-breadcrumb-padding} + 25px) !important;
 }

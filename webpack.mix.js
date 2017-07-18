@@ -3,7 +3,8 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/global.scss', 'public/css')
-   .copyDirectory('resources/assets/img', 'public/img');
+   .copyDirectory('resources/assets/img', 'public/img')
+   .copyDirectory('node_modules/font-awesome/fonts/*', 'public/fonts');
    
 mix.webpackConfig({
    plugins: [
