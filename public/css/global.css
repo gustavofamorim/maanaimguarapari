@@ -11645,6 +11645,19 @@ button.close {
   }
 }
 
+#error-page .logo {
+  width: 100%;
+  height: auto;
+}
+
+#error-page .error-title {
+  text-align: center;
+}
+
+#error-page .error-footer {
+  text-align: right;
+}
+
 .navbar-brand img {
   width: auto;
   height: 100%;
