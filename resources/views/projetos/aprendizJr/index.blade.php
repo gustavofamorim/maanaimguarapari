@@ -10,7 +10,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6 presentation">
+        <div class="col-sm-6 presentation">
             <div class="presentation-title">
                 <h2>A Paz do Senhor Jesus</h2>
                 <h4>Seja bem-vindo!</h4>
@@ -22,7 +22,7 @@
                 <p>Muito o Senhor nos abençoou nesses 07 anos de Projeto Aprendiz Júnior!</p>
             </div>
         </div>
-        <div class="col-md-6 directives">
+        <div class="col-sm-6 directives">
             <div class="col-md-12">
                 <div class="directives-title">
                     <h1>Diretrizes do Projeto</h1>
