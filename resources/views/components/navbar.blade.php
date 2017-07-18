@@ -21,7 +21,7 @@
                 @endif
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li {{ isset($voluntario) ? 'class=active' : '' }} ><a href="{{ route('voluntario') }}">Seja voluntário!</a></li>
+                <li {{ isset($voluntario) ? 'class=active' : '' }} ><a target="_blank" href="{{ route('voluntario') }}">Seja voluntário!</a></li>
                 <li class="dropdown">
                     <a id="login-dropdown" href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <span class="glyphicon glyphicon-user"></span>

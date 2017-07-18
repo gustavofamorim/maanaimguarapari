@@ -1,7 +1,8 @@
 @extends('layouts.default', ['eventos' => true])
 
-@section('content')
+@section('title', 'Eventos')
 
+@section('content')
 <div class="container">
     <div class="row">
         <h1>Calendário de Eventos</h1>

@@ -1,5 +1,7 @@
 @extends('layouts.dashboard.auth.main')
 
+@section('title', 'Cadastro de Usuário')
+
 @section('content')
 <div class="container">
     <div class="row">

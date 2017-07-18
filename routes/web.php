@@ -9,7 +9,7 @@ Route::get('/eventos', function () {
 })->name('eventos');
 
 Route::get('/voluntario', function () {
-    return view('voluntario');
+    return redirect('https://docs.google.com/forms/d/e/1FAIpQLSc7kjTMSbwaod6VyqiukX7DIMdfYBDFACehWDqePnmLMzdNpg/viewform');
 })->name('voluntario');
 
 Route::get('/conheca', function () {

@@ -1,7 +1,8 @@
 @extends('layouts.project', ['aditional' => 'Projeto Aprendiz Júnior', 'breadcrumb' => 'aprendiz-jr'])
 
-@section('content')
+@section('title', 'Projeto Aprendiz Júnior')
 
+@section('content')
 <div class="container">
     <div class="row">
         <div class="col-md-12">

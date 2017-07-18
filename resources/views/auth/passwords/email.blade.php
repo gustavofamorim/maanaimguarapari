@@ -1,5 +1,7 @@
 @extends('layouts.dashboard.auth.main')
 
+@section('title', 'Recuperar Senha')
+
 @section('content')
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
