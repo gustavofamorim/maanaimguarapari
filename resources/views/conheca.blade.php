@@ -1,4 +1,5 @@
-@extends('layouts.default', ['conheca' => true])
+@extends('layouts.default', ['conheca' => true,
+                             'ogpDescription'=> 'Conheça o Maanaim de Guarapari! Estamos sempre prontos para recebê-lo!'])
 
 @section('title', 'Coneça o Maanaim')
 

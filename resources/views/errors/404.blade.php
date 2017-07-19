@@ -1,4 +1,4 @@
-@extends('layouts.error')
+@extends('layouts.error', ['ogpDescription'=> 'Erro 404 - Página não encontrada.']))
 
 @section('title', 'Página não Encontrada')
 

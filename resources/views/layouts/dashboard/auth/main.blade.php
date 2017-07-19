@@ -1,5 +1,4 @@
-@extends('layouts.main')
-
+@extends('layouts.main', ['ogpDescription' => ''])
 @push('stylesheet')
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 @endpush

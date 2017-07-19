@@ -1,4 +1,7 @@
-@extends('layouts.project', ['aditional' => 'Coral Preciosa Semente', 'breadcrumb' => 'preciosa-semente'])
+@extends('layouts.project', ['aditional' => 'Coral Preciosa Semente',
+                             'breadcrumb' => 'preciosa-semente',
+                             'ogpDescription'=> 'Coral Preciosa Semente',
+                             'ogpImage' => asset('img/preciosa-semente.png')])
 
 @section('title', 'Coral Preciosa Semente')
 

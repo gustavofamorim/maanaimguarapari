@@ -1,4 +1,5 @@
-@extends('layouts.default', ['eventos' => true])
+@extends('layouts.default', ['eventos' => true,
+                             'ogpDescription'=> 'Calendário de eventos do Maanaim de Guarapari.'])
 
 @section('title', 'Eventos')
 

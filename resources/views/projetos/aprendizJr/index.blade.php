@@ -1,4 +1,7 @@
-@extends('layouts.project', ['aditional' => 'Projeto Aprendiz Júnior', 'breadcrumb' => 'aprendiz-jr'])
+@extends('layouts.project', ['aditional' => 'Projeto Aprendiz Júnior',
+                             'breadcrumb' => 'aprendiz-jr',
+                             'ogpDescription'=> 'Projeto Aprendiz Júnior, ensinando nossas crianças a tocarem para o Senhor Jesus!',
+                             'ogpImage' => asset('img/projeto-aprendiz-jr.png')])
 
 @section('title', 'Projeto Aprendiz Júnior')
 
