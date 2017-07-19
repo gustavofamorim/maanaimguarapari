@@ -31,6 +31,18 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         
+        <meta property="og:title" content="Maanaim Guarapari - @yield('title')" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:description" content="{{ $ogpDescription }}" />
+        <meta property="og:url" content="{{ Request::url() }}" />
+        <meta property="og:image" content="{{ isset($ogpImage) ? $ogpImage : asset('img/logo.png') }}" />
+        
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Maanaim Guarapari - @yield('title')" />
+        <meta name="twitter:description" content="{{ $ogpDescription }}" />
+        <meta name="twitter:image" content="{{ isset($ogpImage) ? $ogpImage : asset('img/logo.png') }}" />
+        
         <title>Maanaim Guarapari - @yield('title')</title>
         
         @stack('fonts')

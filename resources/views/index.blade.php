@@ -1,4 +1,5 @@
-@extends('layouts.default', ['home' => true])
+@extends('layouts.default', ['home' => true,
+                             'ogpDescription'=> 'Website do Maanaim de Guarapari da Igreja Cristã Maranata!'])
 
 @section('title', 'Home')
 
