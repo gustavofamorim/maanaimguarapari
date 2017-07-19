@@ -25,16 +25,6 @@
                       <img src="{{ asset('img/projeto-aprendiz-jr.png') }}" alt="Projeto Aprendiz Júnior">
                     </a>
                   </div>
-                  <div class="col-xs-6 col-md-3 projeto">
-                    <a href="{{ route('preciosa-semente') }}" class="thumbnail">
-                      <img src="{{ asset('img/preciosa-semente.png') }}" alt="Projeto Aprendiz Júnior">
-                    </a>
-                  </div>
-                  <div class="col-xs-6 col-md-3 projeto">
-                    <a href="{{ route('coral-jovens') }}" class="thumbnail">
-                      <img src="{{ asset('img/coral_de_jovens.o.svg') }}" alt="Coral de Jovens">
-                    </a>
-                  </div>
                 </div>
             </div>
         </section>

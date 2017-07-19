@@ -17,10 +17,10 @@ Route::get('/conheca', function () {
 })->name('conheca');
 
 Route::group(['prefix' => 'projetos'], function(){
+    
     Route::get('/aprendizjr', function () {
         return view('projetos.aprendizJr.index');
     })->name('aprendiz-jr');
-    
     
     Route::group(['prefix' => 'coral'], function () {
         Route::get('/preciosasemente', function () {
@@ -32,7 +32,7 @@ Route::group(['prefix' => 'projetos'], function(){
         })->name('coral-jovens');
     });
 });
-
+/*
 Auth::routes();
 
 Route::group(['prefix' => 'admin',  'middleware' => 'auth'], function()
@@ -43,3 +43,4 @@ Route::group(['prefix' => 'admin',  'middleware' => 'auth'], function()
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
+*/
