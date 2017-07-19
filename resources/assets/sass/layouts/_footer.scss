@@ -1,9 +1,7 @@
 .footer {
-    
-    background: $default-light-bg;
-    padding: 5px;
-
     .footer-info {
+        background: $default-light-bg;
+        padding: 5px;
         .footer-image-container {
             display: none;
         }
@@ -41,7 +39,8 @@
         }
         
         .footer-copyright {
-            background: rgba($default-light-bg, 1);
+            text-align: center;
+            background: white;
         }
     }
 }

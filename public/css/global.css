@@ -11703,7 +11703,7 @@ button.close {
   }
 }
 
-.footer {
+.footer .footer-info {
   background: #f5f8fa;
   padding: 5px;
 }
@@ -11745,7 +11745,8 @@ button.close {
   }
 
   .footer .footer-copyright {
-    background: #f5f8fa;
+    text-align: center;
+    background: white;
   }
 }
 

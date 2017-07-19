@@ -1,5 +1,5 @@
-<footer class="row footer">
-    <div class="footer-info">
+<footer class="footer">
+    <div class="row footer-info">
         <div class="col-sm-4 footer-image-container">
             <img class="footer-image" src="{{ asset('img/logo.o.svg') }}"></img>
         </div>
@@ -16,7 +16,7 @@
             </a>
         </div>
     </div>
-    <div class="col-md-12 footer-copyright">
+    <div class="row footer-copyright">
         <p>© 2017 por Maanaim Guarapari - Honras e Glórias a Jesus Cristo. Amém!</p>
     </div>
 </footer>
