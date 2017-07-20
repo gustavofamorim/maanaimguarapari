@@ -11437,7 +11437,6 @@ button.close {
 }
 
 .section-header svg {
-  width: 50%;
   display: none;
 }
 
@@ -11449,7 +11448,7 @@ button.close {
   .section-header {
     position: relative;
     min-height: calc(calc((100vw * 9) / 16) - 100px);
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0);
   }
 
   .section-header .bg-video {
@@ -11459,6 +11458,7 @@ button.close {
   }
 
   .section-header svg {
+    width: 50%;
     display: block;
     position: absolute;
     margin: auto;
@@ -11468,27 +11468,14 @@ button.close {
     bottom: 0;
   }
 
-  .section-header svg #icm-logo {
-    opacity: 0;
-    stroke-width: .6;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-    -webkit-animation-name: show;
-            animation-name: show;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-    stroke: #ff0000;
-    stroke-dasharray: 2810;
-    stroke-dashoffset: 2810;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-delay: 6.5s;
-            animation-delay: 6.5s;
-  }
-
-  .section-header svg #icm-logo-line {
+  .section-header svg .draw-animation,
+  .section-header svg .show-animation,
+  .section-header svg #icm-logo,
+  .section-header svg #icm-logo-dot,
+  .section-header svg #icm-name,
+  .section-header svg #icm-maanaim-name,
+  .section-header svg #icm-logo-line,
+  .section-header svg #icm-logo-dot-line {
     stroke-width: .6;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
@@ -11501,10 +11488,65 @@ button.close {
     stroke: #ff0000;
     stroke-dasharray: 2810;
     stroke-dashoffset: 2810;
-    -webkit-animation-duration: 20s;
-            animation-duration: 20s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+
+  .section-header svg .show-animation,
+  .section-header svg #icm-logo,
+  .section-header svg #icm-logo-dot,
+  .section-header svg #icm-name,
+  .section-header svg #icm-maanaim-name {
+    -webkit-animation-name: show;
+            animation-name: show;
+  }
+
+  .section-header svg #icm-logo-line {
+    -webkit-animation-duration: 15s;
+            animation-duration: 15s;
     -webkit-animation-delay: 2s;
             animation-delay: 2s;
+  }
+
+  .section-header svg #icm-logo {
+    opacity: 0;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-delay: 5.5s;
+            animation-delay: 5.5s;
+  }
+
+  .section-header svg #icm-logo-dot-line {
+    -webkit-animation-duration: 15s;
+            animation-duration: 15s;
+    -webkit-animation-delay: 5.5s;
+            animation-delay: 5.5s;
+  }
+
+  .section-header svg #icm-logo-dot {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
+  }
+
+  .section-header svg #icm-name {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
+  }
+
+  .section-header svg #icm-maanaim-name {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
   }
 
 @-webkit-keyframes draw {

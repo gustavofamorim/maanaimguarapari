@@ -20,7 +20,6 @@
   }
   
   svg {
-    width: 50%;
     display: none;
   }
   
@@ -33,7 +32,8 @@
     
     position: relative;
     min-height: calc(#{$section-header-video-height} - #{$body-default-padding});
-    background-color: rgba(white, 0.2);
+    background-color: rgba(white, 0);
+    
     .bg-video {
       position: fixed;
       top: 0px;
@@ -41,7 +41,7 @@
     }
     
     svg {
-      
+      width: 50%;
       display: block;
       position: absolute;
       margin: auto;
@@ -50,21 +50,7 @@
       right: 0;
       bottom: 0;
       
-      #icm-logo {
-        opacity: 0;
-        stroke-width: .6;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1;
-        animation-name: show;
-        animation-timing-function: linear;
-        stroke: #ff0000;
-        stroke-dasharray: 2810;
-        stroke-dashoffset: 2810;
-        animation-duration: 2s;
-        animation-delay: 6.5s;
-      }
-      
-      #icm-logo-line {
+      .draw-animation {
         stroke-width: .6;
         animation-fill-mode: forwards;
         animation-iteration-count: 1;
@@ -73,8 +59,53 @@
         stroke: #ff0000;
         stroke-dasharray: 2810;
         stroke-dashoffset: 2810;
-        animation-duration: 20s;
+        animation-duration: 1s;
+        animation-delay: 0s;
+      }
+      
+      .show-animation {
+        @extend .draw-animation;
+        animation-name: show;
+      }
+      
+      #icm-logo-line {
+        @extend .draw-animation;
+        animation-duration: 15s;
         animation-delay: 2s;
+      }
+      
+      #icm-logo {
+        @extend .show-animation;
+        opacity: 0;
+        animation-duration: 2s;
+        animation-delay: 5.5s;
+      }
+      
+      #icm-logo-dot-line {
+        @extend .draw-animation;
+        animation-duration: 15s;
+        animation-delay: 5.5s;
+      }
+      
+      #icm-logo-dot {
+        @extend .show-animation;
+        opacity: 0;
+        animation-duration: 1s;
+        animation-delay: 6s;
+      }
+      
+      #icm-name {
+        @extend .show-animation;
+        opacity: 0;
+        animation-duration: 1s;
+        animation-delay: 6s;
+      }
+      
+      #icm-maanaim-name {
+        @extend .show-animation;
+        opacity: 0;
+        animation-duration: 1s;
+        animation-delay: 6s;
       }
     }
     
