@@ -36,9 +36,11 @@
             <div class="col-sm-9 col-md-10">
                 <div class="row">
                   @component('components.events')
+                    @slot('additionalClass', 'event-transparent')
                     @slot('title', 'Ensaio com os Jovens')
-                    @slot('date', '15/07/17')
+                    @slot('date', '30/07/17')
                     @slot('time', '14')
+                    @slot('location', 'Maanaim de Guarapari')
                     @slot('image', asset('img/coral_de_jovens.o.svg'))
                     @slot('description', 'Um trabalho de louvor e adoração a Deus realizado com todos os jovens da Igreja Cristã Maranata de Guarapari.')
                     @slot('versicle', '"Eu vos escrevi, jovens, porque sois fortes, e a palavra de Deus está em vós, e já vencestes o maligno." 1 João 2:14')
