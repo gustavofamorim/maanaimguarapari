@@ -11623,7 +11623,7 @@ button.close {
 @media (min-width: 768px) {
   .section-projects {
     padding-bottom: 0px;
-    background-color: rgba(245, 248, 250, 0.8);
+    background-color: rgba(245, 248, 250, 0.7);
   }
 
   .section-projects .section-projects-title {
@@ -11631,28 +11631,80 @@ button.close {
   }
 
   .section-projects .projeto {
+    padding: 0px;
     padding-left: calc(30px / 2);
     padding-right: calc(30px / 2);
   }
 
   .section-projects .projeto .thumbnail {
     height: 200px;
+    background-color: rgba(255, 255, 255, 0.7);
   }
 }
 
 .section-next-events {
-  padding: 5px;
+  padding: 15px;
   background-color: white;
 }
 
 @media (min-width: 768px) {
   .section-next-events {
     padding-bottom: 0px;
-    background-color: rgba(245, 248, 250, 0.9);
+    background-color: rgba(245, 248, 250, 0.8);
   }
 
   .section-next-events .section-next-events-title {
     text-align: right;
+  }
+}
+
+.section-sites {
+  padding: 15px;
+}
+
+.section-sites .section-sites-title {
+  padding: 5px;
+}
+
+.section-sites .site {
+  padding: 5px;
+}
+
+.section-sites .site .thumbnail {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  position: relative;
+}
+
+.section-sites .site .thumbnail img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 5px;
+}
+
+@media (min-width: 768px) {
+  .section-sites {
+    padding-bottom: 0px;
+    background-color: rgba(245, 248, 250, 0.9);
+  }
+
+  .section-sites .section-sites-title {
+    text-align: right;
+  }
+
+  .section-sites .site {
+    padding-left: calc(30px / 2);
+    padding-right: calc(30px / 2);
+  }
+
+  .section-sites .site .thumbnail {
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.7);
   }
 }
 
@@ -11746,7 +11798,7 @@ button.close {
 }
 
 .footer .footer-info {
-  background: #f5f8fa;
+  background: white;
   padding: 5px;
 }
 

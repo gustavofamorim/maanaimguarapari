@@ -50,6 +50,25 @@
                 </div>
             </div>
         </section>
+        <section class="row section-sites">
+            <div class="col-sm-3 col-md-2 section-sites-title">
+                <h1>Conheça a Maranata</h1>
+            </div>
+            <div class="col-sm-9 col-md-10">
+                <div class="row">
+                  <div class="col-xs-6 col-md-3 site">
+                    <a target="_blank" href="http://www.igrejacristamaranata.org.br" class="thumbnail">
+                      <img src="{{ asset('img/icm-logo.png') }}" alt="Site oficial da Igreja Cristã Maranata">
+                    </a>
+                  </div>
+                  <div class="col-xs-6 col-md-3 site">
+                    <a target="_blank" href="http://www.radiomaanaim.com.br/" class="thumbnail">
+                      <img src="{{ asset('img/radio-maanaim-logo.png') }}" alt="Rádio Maanaim">
+                    </a>
+                  </div>
+                </div>
+            </div>
+        </section>
         @include('components.default-footer')
     </div>
 @endsection
