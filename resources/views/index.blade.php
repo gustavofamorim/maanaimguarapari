@@ -56,16 +56,21 @@
             </div>
             <div class="col-sm-9 col-md-10">
                 <div class="row">
-                  <div class="col-xs-6 col-md-3 site">
-                    <a target="_blank" href="http://www.igrejacristamaranata.org.br" class="thumbnail">
-                      <img src="{{ asset('img/icm-logo.png') }}" alt="Site oficial da Igreja Cristã Maranata">
-                    </a>
-                  </div>
-                  <div class="col-xs-6 col-md-3 site">
-                    <a target="_blank" href="http://www.radiomaanaim.com.br/" class="thumbnail">
-                      <img src="{{ asset('img/radio-maanaim-logo.png') }}" alt="Rádio Maanaim">
-                    </a>
-                  </div>
+                    <div class="col-xs-6 col-md-3 site">
+                        <a target="_blank" href="http://www.radiomaanaim.com.br" class="thumbnail">
+                            <img src="{{ asset('img/radio-maanaim-logo.png') }}" alt="Rádio Maanaim">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-3 site">
+                        <a target="_blank" href="http://www.institutoicm.org.br" class="thumbnail">
+                            <img src="{{ asset('img/instituto-biblico-logo.png') }}" alt="Instituto Bíblico">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-3 site">
+                        <a target="_blank" href="http://www.centraldelouvor.org.br" class="thumbnail">
+                            <img src="{{ asset('img/central-de-louvor-logo.png') }}" alt="Central de Louvor">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
