@@ -7,7 +7,7 @@
 
 @section('content')
 <div class="background-img">
-    <img src="{{ asset('img/aprendiz-jr-page-background.png') }}"></img>
+    <img src="{{ asset('img/aprendiz-jr-page-background.jpg') }}"></img>
 </div>
 <div class="container projeto-aprendiz-jr-container">
     <div class="row">

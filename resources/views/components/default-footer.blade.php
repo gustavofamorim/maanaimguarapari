@@ -5,7 +5,7 @@
         </div>
         <div class="col-sm-4 footer-about">
             <h2>Sobre nós</h2>
-            <p>Somos membros da <a href="http://www.igrejacristamaranata.org.br/">Igreja Cristã Maranata</a> - Presbitério Espírito Santense.</p>
+            <p>Somos membros da <a target="_blank" href="http://www.igrejacristamaranata.org.br/">Igreja Cristã Maranata</a> - Presbitério Espírito Santense.</p>
             <p>Fale conosco: (27) 99955-2960</p>
         </div>
         <div class="col-sm-4 footer-location">

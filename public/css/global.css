@@ -11437,7 +11437,6 @@ button.close {
 }
 
 .section-header svg {
-  width: 50%;
   display: none;
 }
 
@@ -11449,7 +11448,7 @@ button.close {
   .section-header {
     position: relative;
     min-height: calc(calc((100vw * 9) / 16) - 100px);
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0);
   }
 
   .section-header .bg-video {
@@ -11459,6 +11458,7 @@ button.close {
   }
 
   .section-header svg {
+    width: 50%;
     display: block;
     position: absolute;
     margin: auto;
@@ -11468,27 +11468,14 @@ button.close {
     bottom: 0;
   }
 
-  .section-header svg #icm-logo {
-    opacity: 0;
-    stroke-width: .6;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-    -webkit-animation-name: show;
-            animation-name: show;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-    stroke: #ff0000;
-    stroke-dasharray: 2810;
-    stroke-dashoffset: 2810;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-delay: 6.5s;
-            animation-delay: 6.5s;
-  }
-
-  .section-header svg #icm-logo-line {
+  .section-header svg .draw-animation,
+  .section-header svg .show-animation,
+  .section-header svg #icm-logo,
+  .section-header svg #icm-logo-dot,
+  .section-header svg #icm-name,
+  .section-header svg #icm-maanaim-name,
+  .section-header svg #icm-logo-line,
+  .section-header svg #icm-logo-dot-line {
     stroke-width: .6;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
@@ -11501,10 +11488,65 @@ button.close {
     stroke: #ff0000;
     stroke-dasharray: 2810;
     stroke-dashoffset: 2810;
-    -webkit-animation-duration: 20s;
-            animation-duration: 20s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+
+  .section-header svg .show-animation,
+  .section-header svg #icm-logo,
+  .section-header svg #icm-logo-dot,
+  .section-header svg #icm-name,
+  .section-header svg #icm-maanaim-name {
+    -webkit-animation-name: show;
+            animation-name: show;
+  }
+
+  .section-header svg #icm-logo-line {
+    -webkit-animation-duration: 15s;
+            animation-duration: 15s;
     -webkit-animation-delay: 2s;
             animation-delay: 2s;
+  }
+
+  .section-header svg #icm-logo {
+    opacity: 0;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-delay: 5.5s;
+            animation-delay: 5.5s;
+  }
+
+  .section-header svg #icm-logo-dot-line {
+    -webkit-animation-duration: 15s;
+            animation-duration: 15s;
+    -webkit-animation-delay: 5.5s;
+            animation-delay: 5.5s;
+  }
+
+  .section-header svg #icm-logo-dot {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
+  }
+
+  .section-header svg #icm-name {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
+  }
+
+  .section-header svg #icm-maanaim-name {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
   }
 
 @-webkit-keyframes draw {
@@ -11581,7 +11623,7 @@ button.close {
 @media (min-width: 768px) {
   .section-projects {
     padding-bottom: 0px;
-    background-color: rgba(245, 248, 250, 0.8);
+    background-color: rgba(245, 248, 250, 0.7);
   }
 
   .section-projects .section-projects-title {
@@ -11589,28 +11631,80 @@ button.close {
   }
 
   .section-projects .projeto {
+    padding: 0px;
     padding-left: calc(30px / 2);
     padding-right: calc(30px / 2);
   }
 
   .section-projects .projeto .thumbnail {
     height: 200px;
+    background-color: rgba(255, 255, 255, 0.7);
   }
 }
 
 .section-next-events {
-  padding: 5px;
+  padding: 15px;
   background-color: white;
 }
 
 @media (min-width: 768px) {
   .section-next-events {
     padding-bottom: 0px;
-    background-color: rgba(245, 248, 250, 0.9);
+    background-color: rgba(245, 248, 250, 0.8);
   }
 
   .section-next-events .section-next-events-title {
     text-align: right;
+  }
+}
+
+.section-sites {
+  padding: 15px;
+}
+
+.section-sites .section-sites-title {
+  padding: 5px;
+}
+
+.section-sites .site {
+  padding: 5px;
+}
+
+.section-sites .site .thumbnail {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  position: relative;
+}
+
+.section-sites .site .thumbnail img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 5px;
+}
+
+@media (min-width: 768px) {
+  .section-sites {
+    padding-bottom: 0px;
+    background-color: rgba(245, 248, 250, 0.9);
+  }
+
+  .section-sites .section-sites-title {
+    text-align: right;
+  }
+
+  .section-sites .site {
+    padding-left: calc(30px / 2);
+    padding-right: calc(30px / 2);
+  }
+
+  .section-sites .site .thumbnail {
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.7);
   }
 }
 
@@ -11704,7 +11798,7 @@ button.close {
 }
 
 .footer .footer-info {
-  background: #f5f8fa;
+  background: white;
   padding: 5px;
 }
 
