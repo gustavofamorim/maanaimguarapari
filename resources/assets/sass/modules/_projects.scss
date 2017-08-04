@@ -1,0 +1,27 @@
+.project-content {
+    padding-top: calc(#{$body-breadcrumb-padding} + 25px) !important;
+    
+    .projeto-aprendiz-jr-container {
+        background-color: rgba(white, .7);
+        border-radius: 10px;
+    }
+}
+
+.background-img {
+
+    display: none;
+    
+    @media(min-width: 768px){
+        display: block;
+        position: fixed;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+        img {
+            width: 100%;
+            height: auto;
+            opacity: 0.5;
+            filter: alpha(opacity=50); /* For IE8 and earlier */
+        }
+    }
+}

@@ -1,0 +1,260 @@
+.section-header {
+  
+  $section-header-video-height: calc((100vw * 9) / 16);
+
+  @keyframes MoveUpDown {
+    0% {
+      bottom: calc(30px - 15px);
+    }
+    50% {
+      bottom: 30px;
+    }
+    100% {
+      bottom: calc(30px - 15px);
+    }
+  }
+  
+  .bg-video{
+    width: 100vw;
+    height: auto;
+  }
+  
+  svg {
+    display: none;
+  }
+  
+  .arrow {
+    display: none;
+  }
+  
+  
+  @media (min-width: 768px) {
+    
+    position: relative;
+    min-height: calc(#{$section-header-video-height} - #{$body-default-padding});
+    background-color: rgba(white, 0);
+    
+    .bg-video {
+      position: fixed;
+      top: 0px;
+      z-index: -1;
+    }
+    
+    svg {
+      width: 50%;
+      display: block;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      
+      .draw-animation {
+        stroke-width: .6;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        animation-name: draw;
+        animation-timing-function: linear;
+        stroke: #ff0000;
+        stroke-dasharray: 2810;
+        stroke-dashoffset: 2810;
+        animation-duration: 1s;
+        animation-delay: 0s;
+      }
+      
+      .show-animation {
+        @extend .draw-animation;
+        animation-name: show;
+      }
+      
+      #icm-logo-line {
+        @extend .draw-animation;
+        animation-duration: 15s;
+        animation-delay: 2s;
+      }
+      
+      #icm-logo {
+        @extend .show-animation;
+        opacity: 0;
+        animation-duration: 2s;
+        animation-delay: 5.5s;
+      }
+      
+      #icm-logo-dot-line {
+        @extend .draw-animation;
+        animation-duration: 15s;
+        animation-delay: 5.5s;
+      }
+      
+      #icm-logo-dot {
+        @extend .show-animation;
+        opacity: 0;
+        animation-duration: 1s;
+        animation-delay: 6s;
+      }
+      
+      #icm-name {
+        @extend .show-animation;
+        opacity: 0;
+        animation-duration: 1s;
+        animation-delay: 6s;
+      }
+      
+      #icm-maanaim-name {
+        @extend .show-animation;
+        opacity: 0;
+        animation-duration: 1s;
+        animation-delay: 6s;
+      }
+    }
+    
+    @keyframes draw {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+    
+    @keyframes show {
+      to {
+        opacity: 1;
+      }
+    }
+    
+    
+    .arrow {
+      display: block !important;
+      color: white;
+      font-size: 40px;
+      
+      animation: MoveUpDown 1s linear infinite;
+      position: absolute;
+      left: 50vw;
+      bottom: 0px;
+    }
+  }
+  
+  @media(min-width: 1200px){
+    min-height: calc(#{$section-header-video-height} - #{$body-default-padding} - 100px);
+  }
+}
+
+.section-projects {
+  
+  padding: 15px;
+
+  .section-projects-title {
+    padding: 5px;
+  }
+
+  .projeto {
+
+    padding: 5px;
+
+    .thumbnail {
+      width: 100%;
+      height: 100px;
+      background-color: #fff;
+      position: relative;
+      
+      img {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 5px;
+      }
+    }
+  }
+  
+  @media (min-width: 768px) {
+    
+    padding-bottom: 0px;
+    background-color: rgba($default-light-bg, .7);
+    
+    .section-projects-title {
+      text-align: right;
+    }
+    
+    .projeto {
+      padding: 0px;
+      padding-left: calc(#{$grid-gutter-width} / 2);
+      padding-right: calc(#{$grid-gutter-width} / 2);
+      
+      .thumbnail {
+        height: 200px;
+        background-color: $card-transparent-default-bg;
+      }
+    }
+  }
+}
+
+.section-next-events {
+  
+  padding: 15px;
+  background-color: white;
+  
+  @media (min-width: 768px) {
+    
+    padding-bottom: 0px;
+    background-color: rgba($default-light-bg, .8);
+    
+    .section-next-events-title {
+      text-align: right;
+    }
+  }
+}
+
+.section-sites {
+  
+  padding: 15px;
+
+  .section-sites-title {
+    padding: 5px;
+  }
+
+  .site {
+
+    padding: 5px;
+
+    .thumbnail {
+      width: 100%;
+      height: 100px;
+      background-color: #fff;
+      position: relative;
+      
+      img {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 5px;
+      }
+    }
+  }
+  
+  @media (min-width: 768px) {
+    
+    padding-bottom: 0px;
+    background-color: rgba($default-light-bg, .9);
+    
+    .section-sites-title {
+      text-align: right;
+    }
+    
+    .site {
+      
+      padding-left: calc(#{$grid-gutter-width} / 2);
+      padding-right: calc(#{$grid-gutter-width} / 2);
+      
+      .thumbnail {
+        height: 200px;
+        background-color: $card-transparent-default-bg;
+      }
+    }
+  }
+}

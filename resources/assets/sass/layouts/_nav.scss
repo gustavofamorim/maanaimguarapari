@@ -1,0 +1,46 @@
+.navbar-brand img {
+    width: auto;
+    height: 100%;
+}
+
+.login-form-container {
+    padding-top: 10px;
+}
+
+.navbar-login {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+    
+    .navbar-brand img {
+        padding-right: 10px;
+    }
+    
+    .navbar-container {
+        margin-right: 25px; 
+        margin-left: 25px;
+    }
+    
+    .navbar-login {
+        width: 305px;
+        padding: 10px;
+        padding-bottom: 0px;
+    }
+    
+    .icon-size {
+        font-size: 87px;
+    }
+    
+    .navbar-additional-item {
+        display: none !important;
+    }
+
+}
+
+@media (min-width: 840px) {
+    .navbar-additional-item {
+        display: inline !important;
+    }
+}

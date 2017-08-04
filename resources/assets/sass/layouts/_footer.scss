@@ -1,0 +1,46 @@
+.footer {
+    .footer-info {
+        background: white;
+        padding: 5px;
+        .footer-image-container {
+            display: none;
+        }
+    }
+    
+    .footer-copyright {
+        text-align: center;
+        background: white;
+    }
+    
+    @media (min-width: 768px) {
+        
+        background: rgba($default-light-bg, .95);
+        
+        .footer-info {
+            padding: 0px;
+            .footer-image-container {
+                display: block;
+                text-align: center;
+                min-height: 250px;
+                position: relative;
+                
+                .footer-image {
+                    width: 80%;
+                    height: auto;
+                    
+                    position: absolute;
+                    margin: auto;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+        
+        .footer-copyright {
+            text-align: center;
+            background: white;
+        }
+    }
+}
