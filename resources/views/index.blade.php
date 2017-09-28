@@ -22,7 +22,7 @@
                 <div class="row">
                   <div class="col-xs-6 col-md-3 projeto">
                     <a href="{{ route('aprendiz-jr') }}" class="thumbnail">
-                      <img src="{{ asset('img/projeto-aprendiz-jr.png') }}" alt="Projeto Aprendiz Júnior">
+                      <img src="{{ asset('img/projeto-aprendiz-jr.o.svg') }}" alt="Projeto Aprendiz Júnior">
                     </a>
                   </div>
                 </div>
